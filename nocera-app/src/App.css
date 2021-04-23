@@ -1,5 +1,14 @@
 .App {
+  background-image: url(./assets/vaso.jpg);
+  margin: 0 auto;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background-size: cover;
 }
 
 .App-logo {
