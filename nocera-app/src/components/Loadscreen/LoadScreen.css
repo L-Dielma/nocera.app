@@ -1,0 +1,7 @@
+.Loader {
+  background-image: url("../../assets/logo.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+}

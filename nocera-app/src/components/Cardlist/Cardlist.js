@@ -7,38 +7,33 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import vaso from "../../assets/vaso.jpg";
-
-const useStyles = makeStyles({
-  root: {
-    maxWidth: 345,
-  },
-  media: {
-    height: 140,
-  },
-});
+import "./CardLists.css";
 
 export default function Cardlist() {
-  const classes = useStyles();
   const beerList = [
     {
-      imgUrl: "vaso",
+      imgUrl: "../../assets/vaso.jpg",
+      estilo: "Golden",
+    },
+    {
+      imgUrl: "../../assets/vaso lleno.jpg",
+      estilo: "AMERICAN IPA",
+    },
+    {
+      imgUrl: "../../assets/vaso.jpg",
       estilo: "Golden",
     },
   ];
   return beerList.map((beer) => {
     return (
-      <Card className={classes.root}>
+      <Card className={"root"}>
         <CardActionArea>
           <CardMedia
-            className={classes.media}
-            image={require("../../../assets/images/website/homepage/" +
-              item.image +
-              ".png")}
+            className={"media"}
+            image={beer.imgUrl}
             title="Contemplative Reptile"
           />
           <CardContent>
-            <img src={require(beer.imgUrl)} />
             <Typography gutterBottom variant="h5" component="h2">
               {beer.estilo}
             </Typography>
@@ -50,10 +45,10 @@ export default function Cardlist() {
         </CardActionArea>
         <CardActions>
           <Button size="small" color="primary">
-            Share
+            comparar
           </Button>
           <Button size="small" color="primary">
-            Learn More
+            GALERIA
           </Button>
         </CardActions>
       </Card>
