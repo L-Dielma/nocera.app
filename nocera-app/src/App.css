@@ -1,12 +1,10 @@
 .App {
   background-image: url(./assets/vaso.jpg);
-  margin: 0 auto;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
-  position: absolute;
   width: 100%;
   background-size: cover;
 }
@@ -37,11 +35,26 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.app-root {
+  flex-grow: 1;
+}
+
+.menu-button {
+  margin-right: 16px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.text-header {
+  flex-grow: 1;
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 }

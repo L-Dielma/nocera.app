@@ -1,8 +1,13 @@
-.root {
-  max-width: 300px;
-  background-color: grey;
-  margin: 20px;
+/* .root {
+  background-color: red;
+   margin: 20px;
+   min-width: 300px;
 }
 .media {
-  height: 140;
-}
+  height: 240px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+} */
